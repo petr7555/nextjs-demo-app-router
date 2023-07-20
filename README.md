@@ -1,39 +1,26 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped
-with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) showcasing basic
+Next.js features using **app router**.
 
-## Getting Started
+## Run development version
 
-First, run the development server:
+- install dependencies: `npm install`
+- run the development server: `npm run dev`
+- open http://0.0.0.0:3000
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Routes
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- http://0.0.0.0:3000 - home page
+- http://0.0.0.0:3000/hello - hello page
+- http://0.0.0.0:3000/cars - list of cars
+- http://0.0.0.0:3000/cars/tesla - car details
+- http://0.0.0.0:3000/api/hello - API route
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Run built version
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and
-load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions
-are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use
-the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- run the development server with `npm run dev` to serve JSON files from `public` folder, which are needed in `getData`
+  functions, both for SSG and SSR
+- `npm run build`
+- stop the development server
+- `npm run start`
+- open http://0.0.0.0:3000

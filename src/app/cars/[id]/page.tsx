@@ -25,11 +25,11 @@ export default async function Car({ params: { id } }: { params: { id: string } }
 }
 
 async function getData(id: string) {
-  const req = await fetch(`http://localhost:3000/${id}.json`);
+  const req = await fetch(`http://0.0.0.0:3000/${id}.json`);
   return await req.json() as Car;
 }
 
 export async function generateStaticParams() {
-  const req = await fetch('http://localhost:3000/cars.json');
+  const req = await fetch('http://0.0.0.0:3000/cars.json');
   return await req.json() as string[];
 }
