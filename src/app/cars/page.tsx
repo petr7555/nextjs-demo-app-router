@@ -15,7 +15,7 @@ export default async function Cars() {
   );
 }
 
-export async function getData() {
+async function getData() {
   /* SSG */
   // This request should be cached until manually invalidated.
   // Similar to `getStaticProps`.

@@ -24,7 +24,7 @@ export default async function Car({ params: { id } }: { params: { id: string } }
   );
 }
 
-export async function getData(id: string) {
+async function getData(id: string) {
   const req = await fetch(`http://localhost:3000/${id}.json`);
   return await req.json() as Car;
 }
